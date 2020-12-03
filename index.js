@@ -23,7 +23,11 @@ const parentList = [
 ]
 
 function getParent(list, children){
-  return
+  for (const filho of parentList) {
+    if (filho.children == children) {
+      return filho.name
+    }
+  }
 }
 
 const parent = getParent(parentList, 'Pedro')
